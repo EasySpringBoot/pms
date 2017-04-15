@@ -7,9 +7,9 @@ grails:
         transactionManagement:
             proxies: false
     gorm:
-        # Whether to autowire entities. 
+        # Whether to autowire entities.
         # Disabled by default for performance reasons.
-        autowire: false         
+        autowire: false
         reactor:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
@@ -134,3 +134,7 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+
+server:
+    port: 8008
